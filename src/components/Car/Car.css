@@ -1,8 +1,23 @@
 .Car {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-size: calc(10px + 1vmin);
-    color: white;
-  }
+    font-size: calc(10px + 1vmin) !important;
+    color: #282c34 !important;
+}
+
+.Heading {
+    font-weight: bold !important;
+}
+
+.Panel {
+    margin: 8px !important;
+    background-color: #eeeeee !important;
+}
+
+.Image {
+    width: auto;
+    height: 80%;
+    max-height: 80%;
+}
+
+.Link {
+    color: #1f3f80;
+}

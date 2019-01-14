@@ -1,6 +1,12 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import yaris1 from '../../assets/20190114_113258.jpg';
 import yaris2 from '../../assets/20190114_113311.jpg';
 
@@ -9,39 +15,71 @@ import './Car.css';
 const Car = (props) => {
     return (
         <div className="Car">
-            <h1 style={{textAlign: 'center'}}>Toyota Yaris 1.0</h1>
+            <h1 style={{ textAlign: 'center' }}>Sprzedam Toyotę Yaris 1.0</h1>
 
-            <ul className="Features">
-                <li>silnik 1.0,</li>
-                <li>przebieg: 164800 km</li>
-                <li>kolor srebrny metalik,</li>
-                <li>klimatyzacja manualna,</li>
-                <li>poduszki powietrzne dla kierowcy i pasażera,</li>
-                <li>ABS,</li>
-                <li>radio z CD</li>
-                <li>centralny zamek i alarm,</li>
-                <li>data pierwszej rejestracji 24.12.2003, kupiony w Polskim salonie, Kasia jest trzecim właścicielem,</li>
-                <li>ważne badania techniczne do sierpnia 2019 i OC do lipca 2019,</li>
-                <li>co roku przegląd i wykonywane wszelkie naprawy eksploatacyjne</li>
-                <li>w listopadzie 2018 wymieniony akumulator</li>
-                <li>w pakiecie opony zimowe/letnie</li>
-            </ul>
-            <ul>
-                <li>ma delikatne problemy blacharskie - korozja</li>
-                <li>nie działa tylni spryskiwacz szyb</li>
-            </ul>
-            <ul>
-                <li>cena dla znajomych 5000 (na otomoto takie modele zaczynają się od 7500)</li>
-            </ul>
+            <ExpansionPanel className="Panel" defaultExpanded>
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography className="Heading">Opis samochodu:</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                    <Typography className="List">
+                    <ul className="Features">
+                        <li>silnik 1.0,</li>
+                        <li>przebieg: 164800 km</li>
+                        <li>kolor srebrny metalik,</li>
+                        <li>klimatyzacja manualna,</li>
+                        <li>poduszki powietrzne dla kierowcy i pasażera,</li>
+                        <li>ABS,</li>
+                        <li>radio z CD</li>
+                        <li>centralny zamek i alarm,</li>
+                        <li>data pierwszej rejestracji 24.12.2003, kupiony w polskim salonie, jestem trzecim właścicielem,</li>
+                        <li>ważne badania techniczne do sierpnia 2019 i OC do lipca 2019,</li>
+                        <li>co roku przegląd i wykonywane wszelkie naprawy eksploatacyjne</li>
+                        <li>w listopadzie 2018 wymieniony akumulator</li>
+                        <li>w pakiecie opony zimowe/letnie.</li>
+                    </ul>
+                    Ale ...
+                    <ul>    
+                        <li>ma delikatne problemy blacharskie - korozja</li>
+                        <li>nie działa tylni spryskiwacz szyb</li>
+                    </ul> 
+                    Cena: 7000 zł   
+                  </Typography>
+                </ExpansionPanelDetails>
+            </ExpansionPanel>
 
-            <Carousel autoPlay showArrows={true}>
-            <div>
-                <img src={yaris1} />
-            </div>
-            <div>
-                <img src={yaris2} />
-            </div>
-            </Carousel>
+            <ExpansionPanel className="Panel">
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography className="Heading">Kontakt:</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                    <Typography className="List">
+                        <ul className="Features">
+                            <li>email: <a href="mailto:rzubala@gmail.com" className="Link">Rafał Zubala</a></li>
+                            <li>telefon: +48 506 515 655</li>
+                        </ul>
+                        
+                  </Typography>
+                </ExpansionPanelDetails>
+            </ExpansionPanel>
+
+            <ExpansionPanel className="Panel">
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography className="Heading">Galeria:</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                    <div style={{textAlign: 'center', padding: '20px'}}>
+                        <Carousel autoPlay showArrows={true}>
+                            <div>
+                                <img src={yaris1} className="Image"/>
+                            </div>
+                            <div>
+                                <img src={yaris2} className="Image"/>
+                            </div>
+                        </Carousel>
+                    </div>
+                </ExpansionPanelDetails>
+            </ExpansionPanel>
         </div>
     );
 }
