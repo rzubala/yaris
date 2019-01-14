@@ -21,7 +21,7 @@ const Car = (props) => {
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography className="Heading">Opis samochodu:</Typography>
                 </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
+                <ExpansionPanelDetails className="Details">
                     <Typography className="List">
                     <ul className="Features">
                         <li>silnik 1.0,</li>
@@ -39,7 +39,7 @@ const Car = (props) => {
                         <li>w pakiecie opony zimowe/letnie.</li>
                     </ul>
                     Ale ...
-                    <ul>    
+                    <ul className="Features">    
                         <li>ma delikatne problemy blacharskie - korozja</li>
                         <li>nie działa tylni spryskiwacz szyb</li>
                     </ul> 
@@ -52,7 +52,7 @@ const Car = (props) => {
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography className="Heading">Kontakt:</Typography>
                 </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
+                <ExpansionPanelDetails className="Details">
                     <Typography className="List">
                         <ul className="Features">
                             <li>email: <a href="mailto:rzubala@gmail.com" className="Link">Rafał Zubala</a></li>
@@ -67,8 +67,8 @@ const Car = (props) => {
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography className="Heading">Galeria:</Typography>
                 </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
-                    <div style={{textAlign: 'center', padding: '20px'}}>
+                <ExpansionPanelDetails className="Details">
+                    <div className="Gallery">
                         <Carousel autoPlay showArrows={true}>
                             <div>
                                 <img src={yaris1} className="Image"/>

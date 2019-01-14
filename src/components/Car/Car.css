@@ -5,6 +5,16 @@
 
 .Heading {
     font-weight: bold !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.Details {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
 }
 
 .Panel {
@@ -20,4 +30,19 @@
 
 .Link {
     color: #1f3f80;
+}
+
+.Gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .Gallery {
+        padding: 0px;
+    }
+
+    .Features {
+        padding: 0px 0px 0px 5px !important;
+    }
 }
