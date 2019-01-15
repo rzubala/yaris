@@ -9,10 +9,21 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import yaris1 from '../../assets/20190114_113258.jpg';
 import yaris2 from '../../assets/20190114_113311.jpg';
+import yaris4 from '../../assets/20190115_113958.jpg';
+import yaris5 from '../../assets/20190115_114008.jpg';
+import yaris6 from '../../assets/20190115_114020.jpg';
 
 import './Car.css';
 
 const Car = (props) => {
+    const imgs = [yaris1, yaris2, yaris4, yaris5, yaris6].map(foto => {
+        return (
+        <div>
+            <img src={foto} className="Image"/>
+        </div>
+        );
+    });
+
     return (
         <div className="Car">
             <h1 style={{ textAlign: 'center' }}>Sprzedam Toyotę Yaris 1.0</h1>
@@ -24,7 +35,7 @@ const Car = (props) => {
                 <ExpansionPanelDetails className="Details">
                     <Typography className="List">
                     <ul className="Features">
-                        <li>silnik 1.0,</li>
+                        <li>silnik 1.0 benzyna,</li>
                         <li>przebieg: 164800 km</li>
                         <li>kolor srebrny metalik,</li>
                         <li>klimatyzacja manualna,</li>
@@ -70,12 +81,7 @@ const Car = (props) => {
                 <ExpansionPanelDetails className="Details">
                     <div className="Gallery">
                         <Carousel autoPlay showArrows={true}>
-                            <div>
-                                <img src={yaris1} className="Image"/>
-                            </div>
-                            <div>
-                                <img src={yaris2} className="Image"/>
-                            </div>
+                            {imgs}
                         </Carousel>
                     </div>
                 </ExpansionPanelDetails>
