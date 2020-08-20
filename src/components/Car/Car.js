@@ -7,19 +7,31 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import yaris1 from '../../assets/20190114_113258.jpg';
-import yaris2 from '../../assets/20190114_113311.jpg';
-import yaris4 from '../../assets/20190115_113958.jpg';
-import yaris5 from '../../assets/20190115_114008.jpg';
-import yaris6 from '../../assets/20190115_114020.jpg';
+import yaris1 from '../../assets/IMG_20200820_092815.jpg';
+import yaris2 from '../../assets/IMG_20200820_092823.jpg';
+import yaris3 from '../../assets/IMG_20200820_092848.jpg';
+import yaris4 from '../../assets/IMG_20200820_092908.jpg';
+import yaris5 from '../../assets/IMG_20200820_092912.jpg';
+import yaris6 from '../../assets/IMG_20200820_092921.jpg';
+import yaris7 from '../../assets/IMG_20200820_092926.jpg';
+import yaris8 from '../../assets/IMG_20200820_092943.jpg';
+import yaris9 from '../../assets/IMG_20200820_092955.jpg';
+import yaris10 from '../../assets/IMG_20200820_093006.jpg';
+import yaris11 from '../../assets/IMG_20200820_093020.jpg';
+import yaris12 from '../../assets/IMG_20200820_093703.jpg';
+import yaris13 from '../../assets/IMG_20200820_093721.jpg';
+import yaris14 from '../../assets/IMG_20200820_093741.jpg';
+import yaris15 from '../../assets/IMG_20200820_093824.jpg';
+
 
 import './Car.css';
 
 const Car = (props) => {
-    const imgs = [yaris1, yaris2, yaris4, yaris5, yaris6].map(foto => {
+    const imgs = [yaris1, yaris2, yaris3, yaris4, yaris5, yaris6, yaris7, yaris8, yaris9, yaris10,
+    yaris11, yaris12, yaris13, yaris14, yaris15].map(foto => {
         return (
         <div>
-            <img src={foto} className="Image"/>
+            <img alt="" src={foto} className="Image"/>
         </div>
         );
     });
@@ -35,26 +47,25 @@ const Car = (props) => {
                 <ExpansionPanelDetails className="Details">
                     <Typography className="List">
                     <ul className="Features">
-                        <li>silnik 1.0 benzyna,</li>
-                        <li>przebieg: 164800 km</li>
-                        <li>kolor srebrny metalik,</li>
-                        <li>klimatyzacja manualna,</li>
-                        <li>poduszki powietrzne dla kierowcy i pasażera,</li>
-                        <li>ABS,</li>
-                        <li>radio z CD</li>
-                        <li>centralny zamek i alarm,</li>
-                        <li>data pierwszej rejestracji 24.12.2003, kupiony w polskim salonie, jestem trzecim właścicielem,</li>
-                        <li>ważne badania techniczne do sierpnia 2019 i OC do lipca 2019,</li>
-                        <li>co roku przegląd i wykonywane wszelkie naprawy eksploatacyjne</li>
+                        <li>silnik 1.0 benzyna</li>
+                        <li>przebieg: 180000 km</li>
+                        <li>kolor srebrny metalik</li>
+                        <li>klimatyzacja manualna</li>
+                        <li>poduszki powietrzne dla kierowcy i pasażera</li>
+                        <li>ABS</li>
+                        <li>radio z CD</li>                        
+                        <li>data pierwszej rejestracji 24.12.2003, kupiony w polskim salonie, jestem trzecim właścicielem (od czerwca 2013)</li>
+                        <li>ważne badania techniczne do sierpnia 2021 i OC do lipca 2021</li>
+                        <li>co roku przegląd, wymiana oleju i filtrów oraz wykonywane wszelkie naprawy eksploatacyjne</li>
                         <li>w listopadzie 2018 wymieniony akumulator</li>
-                        <li>w pakiecie opony zimowe/letnie.</li>
+                        <li>w pakiecie opony zimowe/letnie</li>
                     </ul>
-                    Ale ...
+                    usterki:
                     <ul className="Features">    
                         <li>ma delikatne problemy blacharskie - korozja</li>
                         <li>nie działa tylni spryskiwacz szyb</li>
                     </ul> 
-                    Cena: 7000 zł   
+                    Cena: 6000 zł (do negocjacji)
                   </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
@@ -74,7 +85,7 @@ const Car = (props) => {
                 </ExpansionPanelDetails>
             </ExpansionPanel>
 
-            <ExpansionPanel className="Panel">
+            <ExpansionPanel className="Panel" defaultExpanded>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography className="Heading">Galeria:</Typography>
                 </ExpansionPanelSummary>
