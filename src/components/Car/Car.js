@@ -21,14 +21,17 @@ import yaris11 from '../../assets/IMG_20200820_093020.jpg';
 import yaris12 from '../../assets/IMG_20200820_093703.jpg';
 import yaris13 from '../../assets/IMG_20200820_093721.jpg';
 import yaris14 from '../../assets/IMG_20200820_093741.jpg';
-import yaris15 from '../../assets/IMG_20200820_093824.jpg';
+import yaris15 from '../../assets/IMG_20200820_093813.jpg';
+import yaris16 from '../../assets/IMG_20200820_093824.jpg';
+import yaris17 from '../../assets/IMG_20200820_093840.jpg';
+import yaris18 from '../../assets/IMG_20200820_093854.jpg';
 
 
 import './Car.css';
 
 const Car = (props) => {
     const imgs = [yaris1, yaris2, yaris3, yaris4, yaris5, yaris6, yaris7, yaris8, yaris9, yaris10,
-    yaris11, yaris12, yaris13, yaris14, yaris15].map(foto => {
+    yaris11, yaris12, yaris13, yaris14, yaris15, yaris16, yaris17, yaris18].map(foto => {
         return (
         <div>
             <img alt="" src={foto} className="Image"/>
