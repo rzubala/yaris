@@ -48,7 +48,7 @@ const Car = (props) => {
                     <Typography className="List">
                     <ul className="Features">
                         <li>silnik 1.0 benzyna</li>
-                        <li>przebieg: 180000 km</li>
+                        <li>przebieg: 167200 km</li>
                         <li>kolor srebrny metalik</li>
                         <li>klimatyzacja manualna</li>
                         <li>poduszki powietrzne dla kierowcy i pasażera</li>
@@ -65,7 +65,7 @@ const Car = (props) => {
                         <li>ma delikatne problemy blacharskie - korozja</li>
                         <li>nie działa tylni spryskiwacz szyb</li>
                     </ul> 
-                    Cena: 6000 zł (do negocjacji)
+                    Cena: 5500 zł
                   </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
