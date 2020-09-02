@@ -68,7 +68,7 @@ const Car = (props) => {
                         <li>ma delikatne problemy blacharskie - korozja</li>
                         <li>nie działa tylni spryskiwacz szyb</li>
                     </ul> 
-                    Cena: 5500 zł
+                    Cena: 5000 zł (do negocjacji)
                   </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
