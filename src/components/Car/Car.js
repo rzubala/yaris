@@ -54,6 +54,7 @@ const Car = (props) => {
                         <li>przebieg: 167200 km</li>
                         <li>kolor srebrny metalik</li>
                         <li>klimatyzacja manualna</li>
+                        <li>wspomaganie kierownicy</li>
                         <li>poduszki powietrzne dla kierowcy i pasażera</li>
                         <li>ABS</li>
                         <li>radio z CD</li>                        
